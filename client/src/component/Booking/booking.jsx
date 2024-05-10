@@ -48,12 +48,12 @@ const Booking = ({ sendDataToParent }) => {
     try {
       const [appointmentsResponse, createAppointmentResponse] =
         await Promise.all([
-          axios.get("http://127.0.0.1:8000/api/appointment/v1/", {
+          axios.get("https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/appointment/v1/", {
             params: {
               practitioner_id: practitioner_id,
             },
           }),
-          axios.post("http://127.0.0.1:8000/api/appointment/v1/create", {
+          axios.post("https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/appointment/v1/create", {
             ...appointments,
             practitioner_id: practitioner_id,
             note: values.note,
@@ -81,7 +81,7 @@ const Booking = ({ sendDataToParent }) => {
 
       if (createAppointmentResponse.status === 200) {
         notifyOnSuccess("appointment created");
-        await axios.post("http://127.0.0.1:8000/api/user/v1/users", {
+        await axios.post("https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/user/v1/users", {
           phone: values.phone,
           name: values.name,
         });

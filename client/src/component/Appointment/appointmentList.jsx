@@ -64,7 +64,7 @@ const Appointment = () => {
     
     try {
       const res = await axios.put(
-        `http://127.0.0.1:8000/api/user/v1/users/${phone}`,
+        `https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/user/v1/users/${phone}`,
         {
           email: gmail,
           address: address,
@@ -194,12 +194,12 @@ const Appointment = () => {
        let transformedAppointments;
 
        const checkRole = await axios.get(
-         `http://127.0.0.1:8000/api/user/v1/users/${phoneNo}`
+         `https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/user/v1/users/${phoneNo}`
        );
        setUserRole(checkRole.data.role);
        if (checkRole.data.role === "patient") {
          response = await axios.get(
-           `http://127.0.0.1:8000/api/appointment/v1/`,
+           `https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/appointment/v1/`,
            {
              params: {
                id: phoneNo,
@@ -227,7 +227,7 @@ const Appointment = () => {
          });
        } else if (checkRole.data.role === "doctor") {
          response = await axios.get(
-           `http://127.0.0.1:8000/api/appointment/v1/`,
+           `https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/appointment/v1/`,
            {
              params: {
                id: phoneNo,
@@ -246,7 +246,7 @@ const Appointment = () => {
                  return null;
                }
                const { data: patient } = await axios.get(
-                 `http://127.0.0.1:8000/api/user/v1/users/${appointment.patient_phone_no}`
+                 `https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/user/v1/users/${appointment.patient_phone_no}`
                );
 
                if (!patient || !patient.name || !patient.phone) {

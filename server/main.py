@@ -15,6 +15,7 @@ logging.basicConfig(level=logging.INFO)
 origins = [
     "http://localhost",
     "http://localhost:3000",
+    "https://blue-owls-assign-4gff.vercel.app/"
 ]
 
 App.add_middleware(
