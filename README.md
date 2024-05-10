@@ -1,12 +1,12 @@
 
 ## How to run this on your machine
 
-1. [CLONE](git clone git@github.com:pavanh007/blueOwls.git) the repository.
+1. [CLONE](git clone git@github.com:pavanh007/blueOwlsAssign.git) the repository.
 
 2. Clone the repository to your machine.
 
    ```bash
-   $ git clone git@github.com:pavanh007/blueOwls.git
+   $ git clone git@github.com:pavanh007/blueOwlsAssign.git
    ```
 
 3. Install node_modules.
