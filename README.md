@@ -2,14 +2,15 @@
 ## How to run this on your machine
 
 1. [CLONE](git clone git@github.com:pavanh007/blueOwlsAssign.git) the repository.
+2. FE: https://blue-owls-assign-4gff.vercel.app/  && NOTE: BE not deployed
 
-2. Clone the repository to your machine.
+3. Clone the repository to your machine.
 
    ```bash
    $ git clone git@github.com:pavanh007/blueOwlsAssign.git
    ```
 
-3. Install node_modules.
+4. Install node_modules.
 
    1. We're working with older systems or libraries that require compatibility with OpenSSL 1.0.x. 
    2. We encounter errors related to OpenSSL when running your Node.js application, especially when dealing with SSL/TLS connections.
@@ -18,17 +19,17 @@
    $  export NODE_OPTIONS=--openssl-legacy-provider && yarn install
    ```
 
-4. Run Front end
+5. Run Front end
 
    ```bash
    $ yarn start
    ```
-5. change directory
+6. change directory
 
    ```bash
    $ cd server
    ```
-6. install dependencies for server.
+7. install dependencies for server.
 
    ```bash
    $ pip install reqirements.txt
