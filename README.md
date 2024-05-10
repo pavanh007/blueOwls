@@ -64,3 +64,15 @@
 
 ## STRIPE
 ![Screenshot 7](https://i.ibb.co/gV8SVvW/Screenshot-2024-05-10-at-1-42-00-PM.png)
+
+
+## Core Functionalities:
+
+   1. Login as a patient or practitioner.
+   2. Log out using the "logout" button in the profile navigation.
+   3. Practitioners and patients have distinct views.
+   4. Practitioners can create appointments for patients, which are visible in the patient's view.
+   5. Prevention of conflicting appointments by disallowing appointment creation for the same date and time.
+   6. Practitioners can view and edit appointments.
+   7. patients can use the payment button, which is integrated with Stripe.
+
