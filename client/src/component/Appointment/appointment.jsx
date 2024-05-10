@@ -14,7 +14,6 @@ const RenderTitle = () => {
     setIsModalOpen(false);
   };
   const receiveDataFromChild = (data) => {
-    console.log("data", data);
     setIsModalOpen(data);
   };
   return (

@@ -43,7 +43,6 @@ const Login = () => {
           `http://127.0.0.1:8000/api/user/v1/users/${response.data.phone}`
         );
         if (!res) {
-          console.log("res", res);
           notifyInvalidInputs("res");
         }
         notifyOnSuccess();

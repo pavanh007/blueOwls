@@ -12,7 +12,7 @@ const Navbar = ({role}) => {
   const showDrawer = () => {
     setVisible(!visible);
   };
-  const onSearch = (value, _e, info) => console.log(info?.source, value);
+  const onSearch = (value, _e, info) => {};
 
   let { pathname: location } = useLocation();
   useEffect(() => {

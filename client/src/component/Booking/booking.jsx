@@ -74,7 +74,6 @@ const Booking = ({ sendDataToParent }) => {
         }
       });
 
-      console.log("filteredAppointments", filteredAppointments);
       if (filteredAppointments.length > 0) {
         notifyInvalidInputs("slot is not available");
         return;

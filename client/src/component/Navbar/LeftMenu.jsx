@@ -3,7 +3,7 @@ import { Input } from "antd";
 const { Search } = Input;
 
 const LeftMenu = ({ mode }) => {
-  const onSearch = (value, _e, info) => console.log(info?.source, value);
+  const onSearch = (value, _e, info) => {};
   return (
     <div style={{ textAlign: "center" }}>
       <Search

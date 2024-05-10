@@ -71,7 +71,6 @@ const Appointment = () => {
           age: age,
         }
       );
-      console.log("res", res);
       if (res.status === 200) {
         notifyOnSuccess("user updated");
       }
@@ -208,7 +207,6 @@ const Appointment = () => {
            }
          );
          transformedAppointments = response.data.map((record) => {
-           console.log("record", record);
            if (record.patient_phone_no === phoneNo) {
              const tags =
                record.start < Date.now() ? ["NOT_ATTENDED"] : ["UPCOMING"];
@@ -277,7 +275,6 @@ const Appointment = () => {
            })
          );
        }
-       console.log("transformedAppointments", transformedAppointments);
        const filteredAppointments = transformedAppointments.filter(
          (appointment) => appointment !== null
        );
@@ -315,7 +312,7 @@ const Appointment = () => {
   return (
     <>
       <ToastContainer
-        style={{ width: "29.438rem", fontSize: "1rem" }} 
+        style={{ width: "29.438rem", fontSize: "1rem" }}
         position="top-right"
         autoClose={1000}
         closeOnClick={true}
@@ -323,7 +320,12 @@ const Appointment = () => {
         hideProgressBar={true}
       />
       <Navbar role={userRole} />
-      <Table columns={column} dataSource={app} title={RenderTitle} />
+      <Table
+        columns={column}
+        dataSource={app}
+        title={RenderTitle}
+        
+      />
 
       <Drawer title="Patient Details" onClose={onClose} visible={open}>
         <Layout style={{ padding: "20px" }}>
