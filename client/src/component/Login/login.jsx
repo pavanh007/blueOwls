@@ -26,7 +26,7 @@ const Login = () => {
     try {
       
       const response = await axios.post(
-        "https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/auth/v1/token",
+        "http://127.0.0.1:8000/api/auth/v1/token",
         {
           phone: values.phone,
           password: values.password,
@@ -40,7 +40,7 @@ const Login = () => {
       
       if (response.data.phone) {
         const res = await axios.get(
-          `https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/user/v1/users/${response.data.phone}`
+          `http://127.0.0.1:8000/api/user/v1/users/${response.data.phone}`
         );
         if (!res) {
           notifyInvalidInputs("res");

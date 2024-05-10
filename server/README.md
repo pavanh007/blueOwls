@@ -43,7 +43,7 @@ GET /users
 Returns a list of all users in the system:
 
 ```console
-curl https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/user/v1/users -H "Accept: application/json"
+curl http://127.0.0.1:8000/api/user/v1/users -H "Accept: application/json"
 ```
 Response:
 
@@ -67,7 +67,7 @@ GET /users/{user_id}
 Returns details for a specific user with the given user_id:
 
 ```console
-curl https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/user/v1/users/U:PAVANHDSCE:8 -H "Accept: application/json"
+curl http://127.0.0.1:8000/api/user/v1/users/U:PAVANHDSCE:8 -H "Accept: application/json"
 ```
 Response:
 ```json
@@ -146,7 +146,7 @@ POST /token
 Returns a tokens:
 
 ```console
-curl POST https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/auth/v1/token 
+curl POST http://127.0.0.1:8000/api/auth/v1/token 
 -H "Accept: application/json", 
 -d '{
     "user_id": "U:PAVANHDSCE:8",
@@ -171,7 +171,7 @@ post /appointment
 Returns details for a specific user with the given user_id:
 
 ```console
-curl https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/appointment/v1/create 
+curl http://127.0.0.1:8000/api/appointment/v1/create 
 -H "Accept: application/json"
 -d {
     "patient_id": "U:PAVANHDSCE:8",
@@ -203,7 +203,7 @@ GET /appointment/{appointment_id}
 Get appointment from appointment_id
 
 ```console
-curl -X GET https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/appointment/v1/get/APP:ac083bb4-97bd-469f-828a-fa3659c9eec2 -H 'Content-Type: application/json'
+curl -X GET http://127.0.0.1:8000/api/appointment/v1/get/APP:ac083bb4-97bd-469f-828a-fa3659c9eec2 -H 'Content-Type: application/json'
 ```
 Response:
 
@@ -230,7 +230,7 @@ GET /appointment/v1/
 Retrieve all appointment > current day
 
 ```console
-curl -X GET https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/appointment/v1/
+curl -X GET http://127.0.0.1:8000/api/appointment/v1/
      -H "Accept: application/json"
 ```
 Response:

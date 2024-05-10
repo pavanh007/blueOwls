@@ -31,7 +31,7 @@ const Register = () => {
   const onFinish = async  (values) => {
     try {
       const response = await axios.post(
-        "https://vercel.com/pavans-projects-d5c10ae4/blue-owls-assign/8HcPYnkzQ1NfP7ccSpFqbdwUMzDg/api/user/v1/users",
+        "http://127.0.0.1:8000/api/user/v1/users",
         {
           name: values.name,
           email: values.email,
