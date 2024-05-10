@@ -10,9 +10,16 @@ from app.routes.auth import login_router
 
 App = FastAPI()
 
+
+@App.get("/")
+async def root():
+    return {"message": "Hello world"}
+
+
 logging.basicConfig(level=logging.INFO)
 
 origins = [
+    "*",
     "http://localhost",
     "http://localhost:3000",
     
@@ -25,7 +32,6 @@ App.add_middleware(
     allow_methods=["GET", "POST", "PUT", "DELETE"],
     allow_headers=["*"],
 )
-
 
 App.add_middleware(TrustedHostMiddleware, allowed_hosts=["*"])
 
