@@ -76,5 +76,23 @@
 ![Screenshot 7](https://i.ibb.co/gV8SVvW/Screenshot-2024-05-10-at-1-42-00-PM.png)
 
 
+## Future Enhancement
 
+# Front-end
 
+1. Add react-redux and redux-saga for state management.
+2. Split the bigger components into chunks.
+3. use vite.js as a bundler.
+4. Few design improvements.
+5. Optimize the flow.
+
+# Front-end
+
+1. Adding Security for login.
+2. Microservice design.
+3. BD Shradding.
+4. Use HL7 and HIPAA standards for managing the database and security.
+5. Error handler.
+6. Middlewares.
+
+   
