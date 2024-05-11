@@ -53,7 +53,7 @@
 ## LOGIN
 
    ```bash
-   $ DOCTOR: Id: 7892419605, pwd: 12345, PATIENT: Id: 9876543210, pwd: 12345
+   $ DOCTOR: Id: 7892419604, pwd: 12345, PATIENT: Id: 9876543210, pwd: 12345
    ```
 ![Screenshot 1](https://i.ibb.co/ysrjF3Y/Screenshot-2024-05-10-at-1-36-00-PM.png)
 
